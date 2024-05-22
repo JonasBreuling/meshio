@@ -21,7 +21,7 @@ vtk_to_numpy_dtype_name = {
     "int": "int",
     "vtktypeint8": "int8",
     "vtktypeint16": "int16",
-    "vtktypeint32": "int32",
+    "vtktypeint64": "int32",
     "vtktypeint64": "int64",
     "vtktypeuint8": "uint8",
     "vtktypeuint16": "uint16",
