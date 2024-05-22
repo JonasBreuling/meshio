@@ -9,6 +9,7 @@ from ._common import num_nodes_per_cell, warn
 
 topological_dimension = {
     "line": 1,
+    "polyline": 1,
     "polygon": 2,
     "triangle": 2,
     "quad": 2,
@@ -196,6 +197,7 @@ class Mesh:
     def __repr__(self):
         lines = ["<meshio mesh object>", f"  Number of points: {len(self.points)}"]
         special_cells = [
+            "polyline",
             "polygon",
             "polyhedron",
             "VTK_LAGRANGE_CURVE",

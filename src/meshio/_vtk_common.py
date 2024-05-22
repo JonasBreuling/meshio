@@ -10,7 +10,7 @@ vtk_to_meshio_type = {
     1: "vertex",
     # 2: 'poly_vertex',
     3: "line",
-    # 4: 'poly_line',
+    4: "polyline",
     5: "triangle",
     # 6: 'triangle_strip',
     7: "polygon",
@@ -118,6 +118,7 @@ def vtk_cells_from_data(connectivity, offsets, types, cell_data_raw):
 
         # cells with varying number of points
         special_cells = [
+            "polyline",
             "polygon",
             "VTK_LAGRANGE_CURVE",
             "VTK_LAGRANGE_TRIANGLE",
